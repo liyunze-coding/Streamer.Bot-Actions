@@ -89,7 +89,7 @@ public class CPHInline
 
 	private void SetToken(Token token, string tokenVarName)
 	{
-		CPH.SetArgument(tokenVarName, JsonConvert.SerializeObject(token));
+		CPH.SetGlobalVar(tokenVarName, JsonConvert.SerializeObject(token), false);
 	}
 
 	private class Token
